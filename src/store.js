@@ -2,6 +2,9 @@ import { createStore, applyMiddleware } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import createSagaMiddleware from 'redux-saga';
+import { autoRehydrate } from 'redux-persist'
+import thunk from 'redux-thunk'
+import createLogger from 'redux-logger'
 
 
 import createGlobalReducer from './global-reducer';
